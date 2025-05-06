@@ -7,6 +7,6 @@
         public string Address { get; set; }
         public int TotalPriced { get; set; }
         public int CustomerId { get; set; }
-        public ICollection<Product> Products = new List<Product>();
+        public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }
