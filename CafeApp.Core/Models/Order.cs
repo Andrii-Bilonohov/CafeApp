@@ -1,14 +1,15 @@
-﻿namespace CafeApp.Core.Models;
-
-public class Order : EntityChanges
+﻿namespace CafeApp.Core.Models
 {
-    public int Id { get; set; }
-    public string Address { get; set; }
+    public class Order : EntityChanges
+    {
+        public int Id { get; set; }
+        public string Address { get; set; }
 
-    public ICollection<Product> Products { get; set; }
-    public int CustomerId { get; set; }
+        public ICollection<Product> Products { get; set; }
+        public int CustomerId { get; set; }
 
-    public Customer Customer { get; set; }
+        public Customer Customer { get; set; }
 
-    public decimal TotalPrice => Products.Sum(p => p.Price);
+        public decimal TotalPrice => Products.Sum(p => p.Price);
+    }
 }

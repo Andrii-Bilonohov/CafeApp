@@ -1,12 +1,9 @@
-﻿namespace CafeApp.Core.Models
+﻿namespace CafeApp.Core.DTOs.Inputs
 {
-    public class Product : EntityChanges
+    public class ViewMenuDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
     }
 }
-
-

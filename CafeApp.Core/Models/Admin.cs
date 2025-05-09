@@ -1,6 +1,8 @@
-﻿namespace CafeApp.Core.Models;
-
-public class Admin : User
+﻿namespace CafeApp.Core.Models
 {
-    public ICollection<Employee> Employees { get; set; }
+    public class Admin : User
+    {
+        public ICollection<Employee> Employees { get; set; }
+    }
 }
+
